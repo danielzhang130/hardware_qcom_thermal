@@ -454,9 +454,9 @@ namespace implementation {
 			TemperatureType::SKIN,
 			{ "xo-therm-usr" },
 			"skin",
-			40000,
+			50000,
 			95000,
-			40000,
+			50000,
 			true,
 		},
 		{
