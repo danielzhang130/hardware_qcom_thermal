@@ -78,7 +78,7 @@ namespace implementation {
 			TemperatureType::SKIN,
 			{ "xo-therm-adc" },
 			"skin",
-			40000,
+			60000,
 			95000,
 			40000,
 			true,
