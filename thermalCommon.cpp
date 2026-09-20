@@ -414,12 +414,12 @@ int ThermalCommon::estimateSeverity(struct therm_sensor& sensor)
 		if (idx == (int)sensor.t.throttlingStatus) {
 			if ((sensor.positiveThresh &&
 				!isnan(sensor.thresh.hotThrottlingThresholds[idx]) &&
-				temp >=
+				temp >
 				(sensor.thresh.hotThrottlingThresholds[idx] -
 				DEFAULT_HYSTERESIS / sensor.mulFactor)) ||
 				(!sensor.positiveThresh &&
 				!isnan(sensor.thresh.coldThrottlingThresholds[idx]) &&
-				temp <=
+				temp <
 				(sensor.thresh.coldThrottlingThresholds[idx] +
 				DEFAULT_HYSTERESIS / sensor.mulFactor)))
 				break;
